@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:layout_marginTop="8dp"
+    android:weightSum="1"
+    android:id="@+id/userLayout">
+
+    <FrameLayout
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ivProfileImage"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/frame"/>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:layout_gravity="top"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvUserName"
+                android:hint="Hello"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTimeStamp"
+                android:textColor="#40000000"
+                tools:text="12m"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/screenName"
+            android:hint="\@andreacornagli"/>
+
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBody"
+            android:autoLink="web"
+            android:hint="heheh heheh hehehe heheheh hehehehhe"
+            android:layout_below="@+id/linearLayout"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
